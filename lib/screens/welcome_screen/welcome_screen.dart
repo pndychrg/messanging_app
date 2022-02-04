@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:messanging_app/constants.dart';
-import 'package:messanging_app/signinOrsignUp/singin_or_signup_screen.dart';
+import 'package:messanging_app/screens/signinOrsignupScreen/signin_signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -49,8 +49,10 @@ class WelcomeScreen extends StatelessWidget {
 
             FittedBox(
               child: TextButton(
-                onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SigninOrSignup())),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SignInSignUpScreen())),
                 child: Row(
                   children: <Widget>[
                     Text(

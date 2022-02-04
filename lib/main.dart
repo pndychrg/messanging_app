@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messanging_app/screens/welcome_screen.dart';
+import 'package:messanging_app/screens/welcome_screen/welcome_screen.dart';
 import 'package:messanging_app/theme.dart';
 
 void main() {
