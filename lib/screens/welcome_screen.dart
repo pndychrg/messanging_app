@@ -15,7 +15,7 @@ class WelcomeScreen extends StatelessWidget {
               flex: 2,
             ),
             //Welcome Image
-            Image.asset("assets/images/welcome_image.png"),
+            Image.asset("assets/images/messaging.png"),
             Spacer(
               flex: 3,
             ),
