@@ -3,6 +3,7 @@ import 'package:messanging_app/components/filled_outline_button.dart';
 import 'package:messanging_app/constants.dart';
 import 'package:messanging_app/models/Chat.dart';
 import 'package:messanging_app/screens/chats/components/chat_card.dart';
+import 'package:messanging_app/screens/messages/message_screen.dart';
 
 class chatBody extends StatelessWidget {
   @override
@@ -48,7 +49,11 @@ class chatBody extends StatelessWidget {
             itemCount: chatsData.length,
             itemBuilder: (context, index) => ChatCard(
               chat: chatsData[index],
-              press: () {},
+              press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MessageScreen(),
+                  )),
             ),
           ),
         ),
